@@ -71,6 +71,7 @@ y = 0
     #p d.size
     puts "Il y a #{d.size} handle twitter qui commence par une majuscule"
 
+    #sinon fonction de max = .select{|name| name[/\b\p{Lu}/]}
 end
 #begin_with_maj
 
@@ -114,6 +115,8 @@ def tri #trier par ordre alphabétique
 journaliste = journalist
 journalist_sorted = journaliste.sort_by {|journaliste| journaliste[1]}
 p journalist_sorted
+#list.sort {|w1, w2| w1.casecmp(w2)}
+#wordlist.sort_by {|word| word.downcase }
 end
 
 
@@ -128,3 +131,6 @@ def position_epenser
 journaliste = journalist
 puts "#{journaliste.index("@epenser")}"
 end
+
+how_many_undersc
+tri
